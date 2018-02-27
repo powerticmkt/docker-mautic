@@ -25,6 +25,7 @@ The following environment variables are also honored for configuring your Mautic
 -	`-e MAUTIC_CRON_ZOHO=...` (defaults to empty) Enables mautic crons for Zoho CRM integration
 -	`-e MAUTIC_CRON_SUGARCRM=...` (defaults to empty) Enables mautic crons for SugarCRM integration
 -	`-e MAUTIC_CRON_DYNAMICS=...` (defaults to empty) Enables mautic crons for Dynamics CRM integration
+- `-e SYSTEM_TIMEZONE=...` (defaults to empty) Change System Timezone
 
 ### Configuring Cron Schedule
 You can also customize the Cron Schedule with the following environment variables:
