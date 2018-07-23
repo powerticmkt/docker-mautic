@@ -1,6 +1,7 @@
 FROM php:7.1-fpm
 
-MAINTAINER Michael Babker <michael.babker@mautic.org> (@mbabker)
+LABEL vendor="Mautic"
+LABEL maintainer="Luiz Eduardo Oliveira Fonseca <luiz@powertic.com>"
 
 # Install PHP extensions
 RUN apt-get update && apt-get install --no-install-recommends -y \
@@ -12,6 +13,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libkrb5-dev \
     libmcrypt-dev \
     libssl-dev \
+    libz-dev \
     unzip \
     zip \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
